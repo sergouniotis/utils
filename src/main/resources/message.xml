@@ -1,0 +1,30 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:urn="urn:eu.emsa.ssn">
+	<soapenv:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+		<wsa:Action soapenv:mustUnderstand="1">https://safeseanet.emsa.europa.eu/messageservice/request</wsa:Action>
+		<wsa:MessageID soapenv:mustUnderstand="1">AAAYhd1_yt_ah2</wsa:MessageID>
+		<wsa:To soapenv:mustUnderstand="1">http://localhost:7023/ssn-xmlprotocol-ws/ssnmessageservice</wsa:To>
+		<wsa:From soapenv:mustUnderstand="1">http://localhost:7023/ssn-xmlprotocol-ws/ssnmessageservice</wsa:From>
+		<wsa:ReplyTo soapenv:mustUnderstand="1">
+			<wsa:Address>http://localhost:7023/ssn-xmlprotocol-ws/ssnmessageservice</wsa:Address>
+		</wsa:ReplyTo>
+	</soapenv:Header>
+	<soapenv:Body>
+		<urn:MS2SSN_ShipCall_Req>
+			<urn:Header Version="2.0" SentAt="2013-12-19T11:07:06Z"
+				From="GRPIR01" To="SSN" MSRefId="AAAYhd1_yt_ah5" TimeoutValue="120" />
+			<urn:Body>
+				<urn:RequiredResponseCriteria>
+					<urn:ShipCallResp GetDetails="GetActiveHazmatForSelectedShip"
+						GetHazmat="HazmatDetails" />
+					<urn:SearchCriteria>
+						<urn:TimePeriodCriteria StartDateTime="2013-12-19T11:07:06Z"
+							EndDateTime="2013-12-19T11:07:06Z" />
+						<urn:ShipIdentificationCriteria
+							IMONumber="9332511" />
+					</urn:SearchCriteria>
+				</urn:RequiredResponseCriteria>
+			</urn:Body>
+		</urn:MS2SSN_ShipCall_Req>
+	</soapenv:Body>
+</soapenv:Envelope>
