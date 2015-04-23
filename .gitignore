@@ -1,12 +1,31 @@
+*.classpath
+*.project
 *.class
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+.settings/
+*.log
+target/
+*.orig
+*.sh
+*.iml
+*.bat
+*.bak
+*.7z
+*.tmp
+.svn/
+bin/
+tools/
+uml/
+doc/
+nbactions.xml
+/nbactions-sonar.xml
+*.externalToolBuilders
+.metadata/
+libraries/
+Servers/
+nsw_scripts/
+build_1.6.bat
+pom_without_formatter.txt
+.gitignore
+dev/applications/nsw-app/src/main/application/META-INF/weblogic-application.xml
+dev/modules/nsw-crg-console/src/main/webapp/WEB-INF/config/security-config_bck.xml
+.gitignore
