@@ -1,7 +1,7 @@
 /**
  * 
  */
-package emsa.nsw.oxm.jaxb;
+package ts.java.utils.oxm.jaxb;
 
 import java.io.IOException;
 import java.io.OutputStream;
